@@ -107,7 +107,7 @@ document.querySelectorAll('.formone input').forEach(item=>{
      console.log(res)
      if(res.data.status==0){
 layer.msg('登陆成功')
-localStorage.getItem('token',res.data.token)
+localStorage.setItem('token',res.data.token)
 location.href='./index.html'
 
      }else{
