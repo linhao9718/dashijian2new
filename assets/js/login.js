@@ -1,7 +1,7 @@
 
 
 
-
+axios.defaults.baseURL = 'http://www.liulongbin.top:3007';
 document.querySelector('#gotozc').addEventListener('click',function(){
 document.querySelector('#gotodl').style.display='block'
 this.style.display='none'

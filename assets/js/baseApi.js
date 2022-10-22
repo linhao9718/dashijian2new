@@ -12,8 +12,8 @@ if(options.url.indexOf('/my/')!==-1){
 }
 options.complete=function(es){
     console.log(es)
-    if(es.responseJSON.status!==0 ||es.responseJSON.message=='身份认证失败!'){
-        location.href='login.html'
+    if(es.responseJSON.status!==0&&es.responseJSON.message=='身份认证失败!'){
+        location.href='../../login.html'
     
     }
           }
